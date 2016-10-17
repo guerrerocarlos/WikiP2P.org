@@ -7,10 +7,16 @@ function Shell(opts){
     return {show: function(message){
         var left_messages = ['Live Demo:']
 
-        if(message && messages.indexOf(message) == -1){
+        var texts = []
+        
+        for(var i = 0; i < messages.length; i++){
+            texts.push(messages[i].message)
+        }
+
+        if(message && texts.indexOf(message.message) < 0){
             messages.push(message)
         }
-        if(messages.length > 8){
+        if(messages.length > 12){
             messages.shift()
         }
         if(self.ready){
@@ -46,10 +52,28 @@ function Shell(opts){
                 return 'white';
             }
             })
+            titles           
+            .transition()
+            .delay(function(d,i){
+                return i * 100;
+            })
+            .attr('y', function(d,i){
+                return 20 + i*15;
+            })
+            .attr('x', function(d,i){
+                return left_margin-40;
+            })
+            .attr('fill', function(d, i){
+                if(d.color){
+                return d.color
+                } else {
+                return 'white';
+                }
+            })
 
             var logged = logsvg.selectAll('text.logs').data(messages, function(d,i){
                 if(d){
-                    return d.message + new Date()
+                    return d.message
                 } else {
                     return new Date()
                 }
@@ -113,8 +137,7 @@ function Shell(opts){
                 .remove()
             d3.select(window)
                 .on("resize", function() {
-                    console.log('resize!')
-                    shell()
+                    //shell()
                 });
         }
         
