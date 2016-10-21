@@ -5,7 +5,16 @@
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	
+
+	<meta property="og:title" content="More Users = More Capacity" />
+	<meta property="og:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup." />
+	<link rel="image_src" href="http://www.cachep2p.com/assets/images/screen2.png" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CacheP2P: More Users = More Capacity">
+    <meta name="twitter:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup">
+	<meta name="twitter:image" content="http://www.cachep2p.com/assets/images/screen2.png" />
+
+
 	<title>CacheP2P</title>
 
 	<link rel="shortcut icon" href="assets/images/icon.png">
@@ -34,12 +43,13 @@
 				</br>
 				</br>
 				<p class="lead">
-					more users = more capacity
+					"CDNs and cloud services cost money to setup and maintain.</br>
+This scales asset availability with popularity, automatically, for free, with minimal setup." (deckar01 in <a href="https://news.ycombinator.com/item?id=12752168">ycombinator</a>)
 				</p>
 				
 				<p>Just add this line to the footer of your webpages you want to Cache and you are all set:<p>
 					
-				<pre>&lt;script src="cachep2p.min.js"></script>&lt;/script></pre>
+				<pre>&lt;script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>&lt;/script></pre>
 				<p class="small text-muted"></p><a href="/documentation.html" class="btn btn-lg btn-default">Documentation</a>
 				<a href="/api.html" class="btn btn-lg btn-default">How it works?</a>
 				</br>
@@ -59,10 +69,14 @@
 	<section class="container space-before space-after">
 		<div class="row">
 			<div class="col-sm-10 col-sm-push-1">
-				<h1 class="text-center">What it's all about</h1>
-				<p class="lead text-center">
-					Internet was designed to be distributed.
+
+				<p class="lead text-center" style="font-size: 17px;">
+					All links in this website (API, Documentation, etc) are being delivered to you from another Peers as shown in the "Live Demo", when you click on <a href="documentation.html">Documentation</a> or <a href="api.html">API</a> the server will not be used, because you already have them in your browser.
 				</p> 
+				</br>
+				</br>
+				<h1 class="text-center">What it's all about</h1>
+
 			</div>
 		</div>
 	</section>
@@ -121,8 +135,8 @@
 					<a class="addthis_button_linkedin"></a>
 					<a class="addthis_button_google_plusone_share"></a>
 					</div>
-					<!--<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>-->
-					<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-536ba34f3dab1f93"></script>-->
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-536ba34f3dab1f93"></script>
 					<!-- AddThis Button END -->
 					
 				</div>
@@ -142,7 +156,8 @@
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="assets/js/cachep2p.security.js"></script>	
-	<script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>
+	<!--<script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>-->
+	<script src="assets/js/cachep2p.min.js"></script>
 	<script src="assets/js/init.js"></script>
 
 <a href="https://github.com/guerrerocarlos/CacheP2P"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
