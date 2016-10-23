@@ -185,7 +185,8 @@ var Client = function (drawing_element) {
   this.draw_count = 0
   this.draw_request = function () {
     this.draw_count = this.draw_count + 1
-    if (!self.requested && this.draw_count > 20) {
+    console.log(window.innerWidth)
+    if (!self.requested && this.draw_count > (window.innerWidth/100)) {
       requests_count ++
       drawConnection([wikipedia_circle.get_x(), wikipedia_circle.get_y()], [self.get_x(), self.get_y()], self.color, drawing_element, function () {
         // drawConnection([wikipedia_circle.get_x(), wikipedia_circle.get_y()], [self.get_x(), self.get_y()], self.color, drawing_element)
@@ -208,7 +209,7 @@ var Client = function (drawing_element) {
     var i = elements.length - resume_array.indexOf(self.color+'true') - 1
 
 
-    if (!self.requested && this.draw_count > 5 && i > -1 && i < elements.length) {
+    if (!self.requested && this.draw_count > (window.innerWidth/200) && i > -1 && i < elements.length) {
       if(i != elements.length){
         drawConnection([elements[i].get_x(), elements[i].get_y()], [self.get_x(), self.get_y()], self.color, drawing_element)
         self.received_it = true
