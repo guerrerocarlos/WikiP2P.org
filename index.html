@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	<meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dmnkcgdjldgfgbilknlgcbnemkkilfdk">
 
 	<meta property="og:title" content="More Users = More Capacity" />
-	<meta property="og:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup." />
+	<meta property="og:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup."
+	/>
 	<link rel="image_src" href="http://www.cachep2p.com/assets/images/screen2.png" />
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CacheP2P: More Users = More Capacity">
-    <meta name="twitter:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="CacheP2P: More Users = More Capacity">
+	<meta name="twitter:description" content="CDNs and cloud services cost money to setup and maintain, this scales asset availability with popularity, automatically, for free, with minimal setup">
 	<meta name="twitter:image" content="http://www.cachep2p.com/assets/images/screen2.png" />
+  	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
 
-	<title>CacheP2P</title>
+	<title>WikipediaP2P</title>
 
 	<link rel="shortcut icon" href="assets/images/icon.png">
 
 	<!-- Bootstrap itself -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!-- Icons -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> 
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/bootstrap-switch.min.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
@@ -33,121 +38,128 @@
 
 <body>
 
-<!-- Header -->
-<header class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-push-2 text-center">
-				<h1>CacheP2P</h1>
-				<!--<h2>Internet will never be the same again.</h2>-->
-				</br>
-				</br>
-				<p class="lead">
-					"CDNs and cloud services cost money to setup and maintain.</br>
-This scales asset availability with popularity, automatically, for free, with minimal setup." (deckar01 in <a href="https://news.ycombinator.com/item?id=12752168">ycombinator</a>)
-				</p>
-				
-				<p>Just add this line to the footer of your webpages you want to Cache and you are all set:<p>
-					
-				<pre>&lt;script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>&lt;/script></pre>
-				<p class="small text-muted"></p><a href="/documentation.html" class="btn btn-lg btn-default">Documentation</a>
-				<a href="/api.html" class="btn btn-lg btn-default">How it works?</a>
-				</br>
-				</br>
-				</br>
-			</div>
-		</div>
-	</div>
-</header>
-<!-- /Header -->
-	
-
-<!-- Content -->
-<main class="content">
-<svg id='logs' style="width: 100%; height: 200px; background-color: black;"></svg>
-	<!-- Lead -->
-	<section class="container space-before space-after">
-		<div class="row">
-			<div class="col-sm-10 col-sm-push-1">
-
-				<p class="lead text-center" style="font-size: 17px;">
-					All links in this website (API, Documentation, etc) are being delivered to you from another Peers as shown in the "Live Demo", when you click on <a href="documentation.html">Documentation</a> or <a href="api.html">API</a> the server will not be used, because you already have them in your browser.
-				</p> 
-				</br>
-				</br>
-				<h1 class="text-center">What it's all about</h1>
-
-			</div>
-		</div>
-	</section>
-	<!-- /Lead -->
-
-
-
-	<!-- Features -->
-	<section class="container space-before">
-		
-		<div class="row featurelist space-after">
-			<div class="col-md-5 col-sm-6 col-md-push-1 ">
-				<img class="img-feature img-responsive" src="assets/images/screen1.png" alt="Sample image">
-			</div>
-			<div class="col-md-5 col-md-push-1 col-sm-6">
-				<h2 class="space-before">The way internet works currently <span class="text-muted">is not scalable</span></h2>
-				<p>Currently traffic is centralized on the servers and ISP gateways, that are hard to manage, maintain and many times run out of capacity.</p>
-			</div>
-		</div>
-
-		<div class="row featurelist space-after">
-			<div class="col-md-5 col-sm-6 col-md-push-1 col-sm-6">
-				<img class="img-feature img-responsive" src="assets/images/screen2.png" alt="Sample image">
-			</div>
-			<div class="col-md-5 col-md-push-1 col-sm-6">
-				<h2 class="space-before">Internet W3C standards have evolved <span class="text-muted">so we can do it better.</span></h2>
-				<p>Now any browser can act as a server to other browsers, so content can now be delivered even if the main server is completely down, just by getting it from the users who alrelady received it. </p>
-			</div>
-		</div>
-
-		<div class="row featurelist space-after">
-			<div class="col-md-5 col-sm-6 col-md-push-1 col-sm-6">
-				<img class="img-feature img-responsive" src="assets/images/screen3.png" alt="Sample image">
-			</div>
-			<div class="col-md-5 col-md-push-1 col-sm-6">
-				<h2 class="space-before">A faster and more reliable Internet <span class="text-muted">for everyone!</span></h2>
-				<p>Getting content that is just some kilometers from you (specially when it's on your same network) is always faster than to get it from the other side of the world.</p>
-			</div>
-		</div>
-	</section>
-	<!-- /Features -->
-
-</main>
-
-
-<footer id="footer" class="jumbotron">
-	<section class="container">
-		<div class="row">
-				<div class="col-md-5 col-md-push-1">
-					<h2>Got your interest?</h2>
-					<p>Please tell your friends about CacheP2P!</p>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-push-2 text-center">
+					<h1 style="font-family:'Times New Roman'; font-weight: lighter;">WikipediaP2P</h1>
+					<!--<h2>Internet will never be the same again.</h2>-->
+					</br>
+					<p class="lead">
+						Contribute to Wikipedia in a completely new way
+					</p>
+					</br>
+					<!--<a href="/api.html" class="btn btn-lg btn-default">How it works?</a>-->
+					</br>
 				</div>
-				<div class="col-md-5 col-md-push-1">
-					<h2>Live demo</h2>
-					Use these links to check how the live demo works, cached pages start with an <b>*</b> in the browser tab:
-					<p><a href="/documentation.html">Documentation</a></br>
-					<a href="/api.html">API</a></p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+
+
+	<!-- Content -->
+	<main class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-push-2 text-center">
+					</br>
 				</div>
-		</div>	
-	</section>
-</footer>
+			</div>
+		</div>
+		<svg id='wikipedia1' style="width: 100%; height: 200px; background-color: #eee;"></svg>
+		<!-- Lead -->
+		<section class="container space-after" style="padding-top: 15px">
+			<div class="row">
+				<div class="col-lg-8 col-lg-push-2 text-center">
+					WikipediaP2P <input type="checkbox" name="my-checkbox" onchange='simulation.toggle_p2p()'>
+					</br>
+					</br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10 col-sm-push-1">
+
+					<p class="lead text-center" style="font-size: 17px;">
+						</br>
+						</br>
+						Each moving dot represents an user asking <b>Wikipedia</b> for an article
+						</br>each color represents a different article, it gets filled as soon as he receives the content.
+						</br><b>WikipediaP2P</b> enables users to deliver content to other users. Making it faster and cost effective.
+						</br>You can toggle WikipediaP2P <b>OFF</b> and <b>ON</b> and see the difference on how articles get delivered.
+					</p>
+					</br>
+					</br>
+				</div>
+			</div>
+		</section>
+		<!-- /Lead -->
+
+
+
+		<!-- Features -->
+		<section class="container space-before">
+
+			<div class="row featurelist space-after">
+				<div class="col-md-5 col-sm-6 col-md-push-1 ">
+					<img class="img-feature img-responsive" src="assets/images/extension_icon.png" alt="Sample image">
+				</div>
+				<div class="col-md-5 col-md-push-1 col-sm-6">
+					<h2 class="space-before">Be part of WikipediaP2P</br> <span class="text-muted">install the Extension</span></h2>
+					<p>WikipediaP2P is also ideal for Schools and Universities, allowing students to get Wikipedia articles at LAN speed, reducing WAN bandwidth use.</p>
+					</br>
+					</br>
+					<p class="small text-muted"></p>
+					<a onclick='simulation.toggle_p2p()' href="#a" class="btn btn-lg btn-default" style="height: 46px;">
+
+						<svg style="float: left; width: 2.5em; height: 2.5em; margin: 0 1em 0 0;  margin-top: -10px; font-family: 'Cuprum'" xmlns="http://www.w3.org/2000/svg"
+							version="1.1" x="0" y="0" width="41.7" height="41.7" viewBox="0 0 41.7 41.7" enable-background="new 0 0 41.731 41.745"
+							xml:space="preserve">
+							<path fill-opacity="0.1" d="M34 24.7c0-7.2-5.9-13.1-13.1-13.1S7.8 17.5 7.8 24.7h3.7c0-5.2 4.2-9.3 9.3-9.3s9.3 4.2 9.3 9.3"></path>
+							<circle fill="#5077FF" stroke="#FFFFFF" stroke-width="3" cx="20.8" cy="20.9" r="8.4"></circle>
+							<path fill="#FF2504" d="M39.6 11.6C34.5 1.3 21.9-3 11.6 2.2 8.3 3.8 5.6 6.2 3.5 9.2l8.4 14.6c-1.5-4.9 1.2-10.2 6.1-11.7 0.9-0.3 1.8-0.4 2.7-0.4"></path>
+							<path fill="#39B54A" d="M3.5 9.2c-6.4 9.6-3.9 22.6 5.7 29 3 2 6.4 3.2 10 3.5l8.8-14.9c-3.3 4-9.2 4.5-13.1 1.3 -1.4-1.1-2.4-2.6-2.9-4.2"></path>
+							<path fill="#F7C939" d="M19.2 41.7c11.5 0.9 21.6-7.8 22.4-19.3 0.3-3.7-0.4-7.4-2.1-10.8H20.7c5.2 0 9.3 4.2 9.3 9.4 0 2.1-0.7 4.1-2 5.7"></path>
+							<path opacity="0.1" enable-background="new    " d="M3.5 9.2l8.4 14.6c-0.6-2.1-0.5-4.3 0.4-6.3L3.9 8.6"></path>
+							<path opacity="0.1" enable-background="new    " d="M19.2 41.7l8.8-14.9c-1.4 1.7-3.3 2.8-5.4 3.2l-3.7 11.8"></path>
+							<path opacity="0.1" enable-background="new    " d="M39.6 11.6H20.7c2.8 0 5.5 1.3 7.3 3.5l12-3"></path>
+						</svg>
+
+						<span class="install-button" style="box-sizing: border-box; padding: 0px 20px; text-align: left;">
+						Install Chrome Extension
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="row featurelist space-after">
+
+			<div class="col-md-10 col-md-push-1 col-sm-6">
+				<h2 class="space-before">WikipediaP2P <span class="text-muted">is based on <a href="http://www.cachep2p.com/">CacheP2P</a>.</span></h2>
+				<p>WikipediaP2P uses WebRTC for all Peer to Peer communication, if you want to know more about how it works, visit <a href="http://www.cachep2p.com/">www.CacheP2P.com</a>.</p>
+				</br>
+				</br>
+			</div>
+			</div>
+
+
+	</main>
+
+
+
 
 
 	<script src="assets/js/d3.v3.min.js"></script>
 	<script src="assets/js/shell.js"></script>
 
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="assets/js/cachep2p.security.js"></script>	
-	<script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap-switch.min.js"></script>
 	<script src="assets/js/init.js"></script>
 
-<a href="https://github.com/guerrerocarlos/CacheP2P"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+	<a href="https://github.com/guerrerocarlos/WikipediaP2P"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
+			alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 </body>
+
 </html>
