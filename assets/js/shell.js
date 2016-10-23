@@ -313,7 +313,7 @@ function Simulation(opts) {
 
         var left_margin = window_width / 2
 
-        var left_messages = [{text: 'wikipedia.org', get_x: function() { return (window.innerWidth / 2 - 32) }, get_y: function(){ return 33}},
+        var left_messages = [{text: 'wikipedia.org', get_x: function() { return (window.innerWidth / 2 - 39) }, get_y: function(){ return 33}},
                              {text: 'Wikipedia Users:', get_x: function() { return 20 }, get_y: function(){ return 75}}]
 
           var window_width = window.innerWidth
@@ -359,7 +359,7 @@ function Simulation(opts) {
             .attr('x', function (d, i) {
               return d.get_x();
             })
-            .attr('font-family', 'Cuprum')
+            .attr('font-family', 'Open sans')
             
             .attr('fill', function (d, i) {
               if (d.color) {
