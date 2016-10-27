@@ -5,7 +5,7 @@ var simulation = Simulation({drawing_element: '#wikipedia1'})
 simulation.show()
 setInterval(function(){
     simulation.add_client()
-}, 100)
+}, 100 )
 
 if($("[name='my-checkbox']").is(":checked")){
     simulation.toggle_p2p()

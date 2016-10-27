@@ -8,6 +8,18 @@ body, .content {
 	
 }
 
+.orange {
+	color: orange
+}
+.orange:visited {
+	color: orange
+}
+.green {
+	color: green
+}
+.green:visited {
+	color: green
+}
 
 /********************************************************/
 /*                     Typography                       */
