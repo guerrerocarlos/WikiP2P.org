@@ -2,65 +2,63 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Carlos Guerrero (WikipediaP2P.com)">
-	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dmnkcgdjldgfgbilknlgcbnemkkilfdk">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Carlos Guerrero (WikipediaP2P.com)">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dmnkcgdjldgfgbilknlgcbnemkkilfdk">
 
-	<meta property="og:title" content="WikipediaP2P, contribute to Wikipedia in a completely new way" />
-	<meta property="og:description" content="Get Wikipedia articles from LAN if available or from the closest peer in the world, contribute to reduce Wikipedia costs to operate."
-	/>
-	<link rel="image_src" href="https://www.wikipediap2p.com/assets/images/extension_icon.png" />
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="WikipediaP2P, contribute to Wikipedia in a completely new way">
-	<meta name="twitter:description" content="Get Wikipedia articles from LAN if available or from the closest peer in the world, contribute to reduce Wikipedia costs to operate.">
-	<meta name="twitter:image" content="https://www.wikipediap2p.com/assets/images/extension_icon.png" />
-  	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="WikipediaP2P, contribute to Wikipedia in a completely new way" />
+    <meta property="og:description" content="Get Wikipedia articles from LAN if available or from the closest peer in the world, contribute to reduce Wikipedia costs to operate." />
+    <link rel="image_src" href="https://www.wikipediap2p.com/assets/images/extension_icon.png" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WikipediaP2P, contribute to Wikipedia in a completely new way">
+    <meta name="twitter:description" content="Get Wikipedia articles from LAN if available or from the closest peer in the world, contribute to reduce Wikipedia costs to operate.">
+    <meta name="twitter:image" content="https://www.wikipediap2p.com/assets/images/extension_icon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
 
-	<title>WikipediaP2P</title>
+    <title>WikipediaP2P</title>
 
-	<link rel="shortcut icon" href="assets/images/tab_icon.png">
+    <link rel="shortcut icon" href="assets/images/tab_icon.png">
 
-	<!-- Bootstrap itself -->
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<!-- Icons -->
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/bootstrap-switch.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+    <!-- Bootstrap itself -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Icons -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 
 <body>
 
-	<!-- Header -->
-	<header class="header">
-		<div id='wikicanvasdiv' style="position: absolute; top:0; left:0; height: 600px;">
-			<canvas id='wikicanvas' style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
-			<canvas id='wikicanvas2' style="position: absolute; left: 0; top: 0; z-index: 1; opacity: 0.35;"></canvas>
-		</div>
+    <!-- Header -->
+    <header class="header">
+        <div id='wikicanvasdiv' style="position: absolute; top:0; left:0; height: 600px;">
+            <canvas id='wikicanvas' style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+            <canvas id='wikicanvas2' style="position: absolute; left: 0; top: 0; z-index: 1; opacity: 0.35;"></canvas>
+        </div>
 
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-8 col-lg-push-2 text-center">
-					
-					<h1 style="font-family:'Times New Roman'; margin-top: 300px; font-weight: lighter;">WikipediaP2P</h1>
-					<!--<h2>Internet will never be the same again.</h2>-->
-					</br>
-					</br>
-					</br>
-					</p>
-					<a onclick='simulation.toggle_p2p()' href="#a" class="btn btn-lg btn-default" style="height: 46px;">
+        <div class="container">
+            <div class="row">
 
-						<svg style="float: left; width: 2.5em; height: 2.5em; margin: 0 1em 0 0;  margin-top: -10px; font-family: 'Cuprum'" xmlns="http://www.w3.org/2000/svg"
-							version="1.1" x="0" y="0" width="41.7" height="41.7" viewBox="0 0 41.7 41.7" enable-background="new 0 0 41.731 41.745"
-							xml:space="preserve">
+                <div class="col-lg-8 col-lg-push-2 text-center">
+
+                    <h1 style="font-family:'Times New Roman'; margin-top: 300px; font-weight: lighter;">WikipediaP2P</h1>
+                    <!--<h2>Internet will never be the same again.</h2>-->
+                    </br>
+                    </br>
+                    </br>
+                    </p>
+                    <a onclick='simulation.toggle_p2p()' href="#a" class="btn btn-lg btn-default" style="height: 46px;">
+
+                        <svg style="float: left; width: 2.5em; height: 2.5em; margin: 0 1em 0 0;  margin-top: -10px; font-family: 'Cuprum'" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="41.7" height="41.7" viewBox="0 0 41.7 41.7" enable-background="new 0 0 41.731 41.745"
+                            xml:space="preserve">
 							<path fill-opacity="0.1" d="M34 24.7c0-7.2-5.9-13.1-13.1-13.1S7.8 17.5 7.8 24.7h3.7c0-5.2 4.2-9.3 9.3-9.3s9.3 4.2 9.3 9.3"></path>
 							<circle fill="#5077FF" stroke="#FFFFFF" stroke-width="3" cx="20.8" cy="20.9" r="8.4"></circle>
 							<path fill="#FF2504" d="M39.6 11.6C34.5 1.3 21.9-3 11.6 2.2 8.3 3.8 5.6 6.2 3.5 9.2l8.4 14.6c-1.5-4.9 1.2-10.2 6.1-11.7 0.9-0.3 1.8-0.4 2.7-0.4"></path>
@@ -71,101 +69,100 @@
 							<path opacity="0.1" enable-background="new    " d="M39.6 11.6H20.7c2.8 0 5.5 1.3 7.3 3.5l12-3"></path>
 						</svg>
 
-						<span class="install-button" style="box-sizing: border-box; padding: 0px 20px; text-align: left;">
+                        <span class="install-button" style="box-sizing: border-box; padding: 0px 20px; text-align: left;">
 						Install Chrome Extension
 						</span>
-					</a>
-					</br>
-					</br>
-					</br>
-					</br>
-					</br>
-					<!--<a href="/api.html" class="btn btn-lg btn-default">How it works?</a>-->
-					</br>
-					
-				</div>
-										
-			</div>
-		</div>
-		
-	</header>
-	<!-- /Header -->
+                    </a>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <!--<a href="/api.html" class="btn btn-lg btn-default">How it works?</a>-->
+                    </br>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /Header -->
 
 
-	<!-- Content -->
-	<main class="content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-push-2 text-center">
-					</br>
-				</div>
-			</div>
-		</div>
-
-
-
-		<!-- Lead -->
-		<section class="container space-after" style="padding-top: 15px">
-
-			<div class="row">
-
-				<div class="col-md-5 col-md-push-1 col-sm-6">
-					<h2 class="space-before">How does it work?</br> <span class="text-muted">(P2P for the masses)</span></h2>
-					<p>WikipediaP2P changes the way Wikipedia's links behave, </br>but you just have to keep using wikipedia as usual.</p>
-					</br>
-					<p><a href="#" class="orange">This color</a> means it's rearching for that article.</p>
-					<p><a href="#" class="green">This color</a> means that it has been obtained from a peer.</p>
-					</br>
-					<p>If it can't be found from another peer, it will be shown from Wikipedia as usual.</p>
-					</br>
-					
-					<p>In other words, after you have installed WikipediaP2P, just use Wikipedia as usual.</p>
-					</br>					
-
-				</div>
-				<div class="col-md-5 col-sm-6 col-md-push-1 ">
-					<img class="img-feature img-responsive" src="assets/images/example1.png" alt="Sample image">
-				</div>
-			</div>
-		</section>
-		<!-- /Lead -->
-
-		<section class="container space-after" style="padding-top: 15px">
-			<div class="row">
-				<div class="col-md-5 col-sm-6 col-md-push-1 ">
-					<img class="img-feature img-responsive" src="assets/images/extension_icon.png" alt="Sample image">
-				</div>
-				<div class="col-md-5 col-md-push-1 col-sm-6">
-					<h2 class="space-before">Why should I use it?</br> <span class="text-muted">What's it's purpose?</span></h2>
-					<p>Using WikipediaP2P helps Wikipedia Foundation to save bandwidth and resources, and improves the experience from places where many Wikipedia users are in the same local network (Universities, Schools or even complete countries).</p>
-					<p>This is an <b>unofficial extension</b> and not entitled by Wikipedia in any way, it's just an implementation of latest web-technologies towards sharing of knowelege.</p>
-					<p>It's <b>Open Source</b>, Hopefully Wikipedia could see this project and consider implementing it officially.</p>
-					</br>
-
-				</div>
-			</div>
-
-		</section>
+    <!-- Content -->
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-push-2 text-center">
+                    </br>
+                </div>
+            </div>
+        </div>
 
 
 
-		<!-- Features -->
-		<section class="container space-before">
+        <!-- Lead -->
+        <section class="container space-after" style="padding-top: 15px">
 
-			<div class="row featurelist space-after">
-				<div class="col-md-3 col-sm-3 col-md-push-1 ">
-				</div>
-				<div class="col-md-5 col-md-push-1 col-sm-6 text-center">
-					
-					<h2 class="space-before">Be part of WikipediaP2P</br> <span class="text-muted"></span></h2>
-					</br>
-					</br>
-					<p class="small text-muted"></p>
-					<a onclick='simulation.toggle_p2p()' href="#a" class="btn btn-lg btn-default" style="height: 46px;">
+            <div class="row">
 
-						<svg style="float: left; width: 2.5em; height: 2.5em; margin: 0 1em 0 0;  margin-top: -10px; font-family: 'Cuprum'" xmlns="http://www.w3.org/2000/svg"
-							version="1.1" x="0" y="0" width="41.7" height="41.7" viewBox="0 0 41.7 41.7" enable-background="new 0 0 41.731 41.745"
-							xml:space="preserve">
+                <div class="col-md-5 col-md-push-1 col-sm-6">
+                    <h2 class="space-before">How does it work?</br> <span class="text-muted">(P2P for the masses)</span></h2>
+                    <p>WikipediaP2P changes the way Wikipedia's links behave, </br>but you just have to keep using wikipedia as usual.</p>
+                    </br>
+                    <p><a href="#" class="orange">This color</a> means it's searching for that article.</p>
+                    <p><a href="#" class="green">This color</a> means that it has been obtained from a peer.</p>
+                    </br>
+                    <p>If it can't be found from another peer, it will be opened from Wikipedia as usual.</p>
+                    </br>
+
+                    <p>In other words, after you have installed WikipediaP2P, just use Wikipedia as usual.</p>
+                    </br>
+
+                </div>
+                <div class="col-md-5 col-sm-6 col-md-push-1 ">
+                    <img class="img-feature img-responsive" src="assets/images/example1.png" alt="Sample image">
+                </div>
+            </div>
+        </section>
+        <!-- /Lead -->
+
+        <section class="container space-after" style="padding-top: 15px">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-md-push-1 ">
+                    <img class="img-feature img-responsive" src="assets/images/extension_icon.png" alt="Sample image">
+                </div>
+                <div class="col-md-5 col-md-push-1 col-sm-6">
+                    <h2 class="space-before">Why should I use it?</br> <span class="text-muted">What's it's purpose?</span></h2>
+                    <p>Using WikipediaP2P helps Wikipedia Foundation to save bandwidth and resources, and improves the experience in local networks (Universities, Schools or even complete countries).</p>
+                    <p>This is an <b>unofficial extension</b> and not entitled by Wikipedia in any way, it's just an implementation of latest web-technologies towards sharing of knowelege.</p>
+                    <p>It's <b>Open Source</b>, Hopefully Wikipedia could see this project and consider implementing something like it.</p>
+                    </br>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Features -->
+        <section class="container space-before">
+
+            <div class="row featurelist space-after">
+                <div class="col-md-3 col-sm-3 ">
+                </div>
+                <div class="col-md-6 col-sm-6 text-center">
+
+                    <h2 class="space-before">Be part of WikipediaP2P</br> <span class="text-muted"></span></h2>
+                    </br>
+                    </br>
+                    <p class="small text-muted"></p>
+                    <a onclick='simulation.toggle_p2p()' href="#a" class="btn btn-lg btn-default" style="height: 46px;">
+
+                        <svg style="float: left; width: 2.5em; height: 2.5em; margin: 0 1em 0 0;  margin-top: -10px; font-family: 'Cuprum'" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="41.7" height="41.7" viewBox="0 0 41.7 41.7" enable-background="new 0 0 41.731 41.745"
+                            xml:space="preserve">
 							<path fill-opacity="0.1" d="M34 24.7c0-7.2-5.9-13.1-13.1-13.1S7.8 17.5 7.8 24.7h3.7c0-5.2 4.2-9.3 9.3-9.3s9.3 4.2 9.3 9.3"></path>
 							<circle fill="#5077FF" stroke="#FFFFFF" stroke-width="3" cx="20.8" cy="20.9" r="8.4"></circle>
 							<path fill="#FF2504" d="M39.6 11.6C34.5 1.3 21.9-3 11.6 2.2 8.3 3.8 5.6 6.2 3.5 9.2l8.4 14.6c-1.5-4.9 1.2-10.2 6.1-11.7 0.9-0.3 1.8-0.4 2.7-0.4"></path>
@@ -175,50 +172,124 @@
 							<path opacity="0.1" enable-background="new    " d="M19.2 41.7l8.8-14.9c-1.4 1.7-3.3 2.8-5.4 3.2l-3.7 11.8"></path>
 							<path opacity="0.1" enable-background="new    " d="M39.6 11.6H20.7c2.8 0 5.5 1.3 7.3 3.5l12-3"></path>
 						</svg>
-						
 
-						<span class="install-button" style="box-sizing: border-box; padding: 0px 20px; text-align: left;">
+
+                        <span class="install-button" style="box-sizing: border-box; padding: 0px 20px; text-align: left;">
 						Install Chrome Extension
 						</span>
-					</a>
-				</div>
-			</div>
-			<div class="row featurelist space-after">
+                    </a>
+                </div>
 
-			<div class="col-md-10 col-md-push-1 col-sm-6 space-before">
-				</br>
-				</br>
-				</br>
-				</br>
-				<h2 class="space-before">WikipediaP2P <span class="text-muted">is based on <a href="http://www.cachep2p.com/">CacheP2P</a>.</span></h2>
-				<p>WikipediaP2P uses WebRTC for all Peer to Peer communication.</p>
-				</br>
-				<h2 class="space-before">Questions? </h2>
-				<p>Please write all questions publicly as a <a href="https://github.com/guerrerocarlos/wikipediap2p/issues">'github issue'</a> after many questions have been received a FAQ will be published here.</p>
-				</br>
-			</div>
-			</div>
+            </div>
+
+            <div class="row featurelist text-center">
+
+                <a href="https://github.com/guerrerocarlos/WikipediaP2P">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="50" height="50" viewBox="0 0 50.000001 49.999999" id="svg2" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="github.svg">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath4171"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4173"
+         d="m 0,551.986 530.973,0 L 530.973,0 0,0 0,551.986 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="91.334407"
+     inkscape:cy="126.32399"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1103"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.3622)">
+    <g
+       id="g4175"
+       transform="matrix(1.25,0,0,-1.25,24.616546,1006.3204)"
+       style="fill:#cccccc">
+      <path
+         d="m 0,0 c -8.995,0 -16.288,-7.293 -16.288,-16.29 0,-7.197 4.667,-13.302 11.14,-15.457 0.815,-0.149 1.112,0.354 1.112,0.786 0,0.386 -0.014,1.411 -0.022,2.77 -4.531,-0.984 -5.487,2.184 -5.487,2.184 -0.741,1.881 -1.809,2.382 -1.809,2.382 -1.479,1.011 0.112,0.991 0.112,0.991 1.635,-0.116 2.495,-1.679 2.495,-1.679 1.453,-2.489 3.813,-1.77 4.741,-1.354 0.148,1.053 0.568,1.771 1.034,2.178 -3.617,0.411 -7.42,1.809 -7.42,8.051 0,1.778 0.635,3.232 1.677,4.371 -0.168,0.412 -0.727,2.068 0.159,4.311 0,0 1.368,0.438 4.48,-1.67 1.299,0.361 2.693,0.542 4.078,0.548 1.383,-0.006 2.777,-0.187 4.078,-0.548 3.11,2.108 4.475,1.67 4.475,1.67 0.889,-2.243 0.33,-3.899 0.162,-4.311 1.044,-1.139 1.675,-2.593 1.675,-4.371 0,-6.258 -3.809,-7.635 -7.438,-8.038 0.585,-0.503 1.106,-1.497 1.106,-3.017 0,-2.177 -0.02,-3.934 -0.02,-4.468 0,-0.436 0.293,-0.943 1.12,-0.784 6.468,2.159 11.131,8.26 11.131,15.455 C 16.291,-7.293 8.997,0 0,0"
+         style="fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path4177"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="row featurelist space-after">
+
+                <div class="col-md-10 col-md-push-1 col-sm-6 space-before">
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <h2 class="space-before">WikipediaP2P <span class="text-muted">is based on <a href="http://www.cachep2p.com/">CacheP2P</a>.</span></h2>
+                    <p>WikipediaP2P uses WebRTC for all Peer to Peer communication.</p>
+                    </br>
+                    <h2 class="space-before">Questions? </h2>
+                    <p>Please write all questions publicly as a <a href="https://github.com/guerrerocarlos/wikipediap2p/issues">'github issue'</a>, after many questions have been answered the FAQ will be added here.</p>
+                    </br>
+                </div>
+            </div>
 
 
 
 
-	</main>
+    </main>
 
 
 
 
 
-	<script src="assets/js/d3.v3.min.js"></script>
-	<script src="assets/js/shell.js"></script>
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script src="assets/js/shell.js"></script>
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap-switch.min.js"></script>
-	<script src="assets/js/init.js"></script>
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-switch.min.js"></script>
+    <script src="assets/js/init.js"></script>
 
 
-	<a href="https://github.com/guerrerocarlos/WikipediaP2P"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
-			alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
 </body>
 
 </html>
